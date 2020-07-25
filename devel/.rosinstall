@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/ahmad/catkin_ws/src/diff_robot_drive/devel/setup.sh
