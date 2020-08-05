@@ -30,6 +30,9 @@ include_directories(
   ${EIGEN3_INCLUDE_DIR}
 )
 
+catkin_install_python(PROGRAMS scripts/remote_controller.py
+  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)
 
 add_executable(example_node_kalman_filter src/example_node_kalman_filter.cpp)
 target_link_libraries(example_node_kalman_filter ${catkin_LIBRARIES})
